@@ -1,37 +1,127 @@
-## Welcome to GitHub Pages
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Module 2 solution</title>
+</head>
+<body>
+<h1>Our Menu</h1>
+<div class='row'>
+	<div class='col-lg-4 col-md-6 sx-12'>
+		<div class='section'>
+			<span id='one'>Chicken</span>
+				<p>Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut atiquip ex ea commodo consequat. 
+</p>
+		</div>
+	</div>
+	<div class='col-lg-4 col-md-6 sx-12'>
+		<div class='section'>
+			<span id='two'>Beef</span>
+				<p>Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut atiquip ex ea commodo consequat. 
+</p>
+		</div>
+	</div>
+	<div class='col-lg-4 col-md-12 sx-12'>
+		<div class='section'>
+			<span id='three'>Sushi</span>
+				<p>Iorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut atiquip ex ea commodo consequat. 
+</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
 
-You can use the [editor on GitHub](https://github.com/Nani8662/week2test/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+{
+  box-sizing: border-box;
+}
+body{
+background-color:rgb(51,232,255);
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+h1 {
+	font-size: 27px;
+	font-family: Georgia serif;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	margin-bottom: 30px;
+        
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+p {
+	padding: 15px 5px 0px 5px;
+	font-family: Georgia sans-serif;
+	font-size: 16px;
+	position: relative;
+}
 
-```markdown
-Syntax highlighted code block
+.section { 
+	background-color: rgb(150, 150, 150);
+   	border: 2px solid black;
+   	margin-top: 20px; 
+   	margin-right: 20px; 
+   	padding: 3px;
+   	text-align: justify;
+   	position: relative;
+ }
 
-# Header 1
-## Header 2
-### Header 3
+span {
+	font-size: 20px;
+	width: 150px;
+	border: 1px solid black;
+	font-weight: bold;
+	text-align: center;
+float: right; top :0; right: 0; margin: 0;
+	position: absolute;
+}
+#one {
+	background-color: rgb(250, 150, 150);
+	color: rgb(0, 0, 0);
+}
+#two {
+	background-color: rgb(250, 0, 0);
+	color: rgb(250, 250, 250);
+}
+#three {
+	background-color: rgb(200, 200, 100);
+	color: rgb(0, 0, 0);
+}
+}
 
-- Bulleted
-- List
+.row {
+	width: 100%;
+}
 
-1. Numbered
-2. List
+/*  PC view */
 
-**Bold** and _Italic_ and `Code` text
+@media (min-width: 992px) {
+ 
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+	}
+}
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Nani8662/week2test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+}
+/*for very small screens or mobile devices */
+@media (max-width: 767px)  {
+  
+  .col-sx-12 {
+  	float: left;
+    width: 100%;
+  }
+}
